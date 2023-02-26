@@ -17,4 +17,4 @@
    - 
       command: ./test.zsh
       stdout: true
-      stderr: ture
+      stderr: true

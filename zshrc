@@ -1,4 +1,8 @@
-source /opt/homebrew/opt/nvm/nvm.sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 echo 'Hello from .zshrc'
 
@@ -14,6 +18,7 @@ echo 'Hello from .zshrc'
 
 alias ls='ls -lAFh'
 alias fls='command ls $1 | grep $2'
+alias szshrc='source ~/.zshrc'
 # git aliases
 
 alias gca='git commit -am $1'
@@ -39,3 +44,5 @@ function mkcd () {
 
 
 # ... and Other Surprises
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
